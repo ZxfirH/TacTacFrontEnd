@@ -1,38 +1,65 @@
-.App {
+.app {
   text-align: center;
+  background-color: #222; /* Dark background color for posts */
+  color: #fff; /* White text color for posts */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  background-color: #222; /* Dark background color for the header */
+  color: #fff; /* White text color for the header */
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.post-feed {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-start;
 }
 
-.App-link {
-  color: #61dafb;
+.post {
+  margin: 10px;
+  padding: 10px;
+  border: 0px solid #ccc;
+  max-width: 300px;
+  display: flex; /* Display post vertically */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Align elements at the center horizontally */
+  background-color: #222; /* Dark background color for posts */
+  color: #fff; /* White text color for posts */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img {
+  width: 100%;
+  height: auto;
+}
+
+.menu {
+  background-color: #333; /* Dark background color for the menu */
+  color: #fff; /* White text color for the menu */
+  padding: 10px;
+}
+/* ... (existing CSS rules) */
+
+.post-feed {
+  gap: 50px; /* Adjust the value to control the spacing */
+}
+
+.post button {
+  padding: 5px 30px; /* Increase padding to make the button bigger */
+  font-size: 16px; /* Increase font size to make the text bigger */
+  background-color: transparent;
+  border: 0px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s; /* Remove background color transition */
+}
+
+.post button:hover {
+  color: #fff; /* Change the text color when hovered */
+}
+
+.post button.liked {
+  color: red; /* Change the text color to red when liked */
+  border-color: red; /* Change the border color to red when liked */
 }
