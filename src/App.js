@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Feed from './components/pages/feed';
 import Home from './components/pages/home';
 
+
 const App = () => {
   const [posts, setPosts] = useState([
     {
